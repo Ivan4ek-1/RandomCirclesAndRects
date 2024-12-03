@@ -4,9 +4,10 @@ import random
 from PyQt6 import uic
 from PyQt6.QtGui import QPainter, QColor
 from PyQt6.QtWidgets import QApplication, QPushButton, QMainWindow
+from Ui import Ui_MainWindow
 
 
-class Example(QMainWindow):
+class Example(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('Ui.ui', self)
@@ -28,8 +29,13 @@ class Example(QMainWindow):
 
     def draw_circle(self, qp):
         diameter = random.randrange(500)
-        qp.setBrush(QColor(255, 255, 0))
+        r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
+        qp.setBrush(QColor(r, g, b))
         qp.drawEllipse(30, 30, diameter, diameter)
+        diameter1 = random.randrange(500)
+        r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
+        qp.setBrush(QColor(r, g, b))
+        qp.drawEllipse(200, 30, diameter1, diameter1)
 
 
 if __name__ == '__main__':
