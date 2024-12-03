@@ -27,7 +27,7 @@ class Example(QMainWindow, Ui_MainWindow):
         self.update()
 
     def draw_circle(self, qp):
-        for i in range(random.randrange(100)):
+        for i in range(random.randint(30, 100)):
             diameter = random.randrange(300)
             randx = random.randrange(750)
             randy = random.randrange(750)
