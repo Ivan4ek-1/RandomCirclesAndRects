@@ -29,7 +29,7 @@ class Example(QMainWindow, Ui_MainWindow):
     def draw_circle(self, qp):
         for i in range(random.randint(30, 100)):
             diameter = random.randrange(300)
-            randx = random.randrange(750)
+            randx = random.randrange(740)
             randy = random.randrange(750)
             r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
             qp.setBrush(QColor(r, g, b))
