@@ -1,9 +1,8 @@
 import sys
 import random
 
-from PyQt6 import uic
 from PyQt6.QtGui import QPainter, QColor
-from PyQt6.QtWidgets import QApplication, QPushButton, QMainWindow
+from PyQt6.QtWidgets import QApplication, QMainWindow
 from Ui import Ui_MainWindow
 
 
