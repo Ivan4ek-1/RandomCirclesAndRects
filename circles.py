@@ -10,7 +10,7 @@ from Ui import Ui_MainWindow
 class Example(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('Ui.ui', self)
+        self.setupUi(self)
         self.do_paint = False
         self.btn.setText('Создать')
         self.btn.clicked.connect(self.paint)
