@@ -28,15 +28,13 @@ class Example(QMainWindow, Ui_MainWindow):
         self.update()
 
     def draw_circle(self, qp):
-        diameter = random.randrange(500)
-        r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
-        qp.setBrush(QColor(r, g, b))
-        qp.drawEllipse(30, 30, diameter, diameter)
-        diameter1 = random.randrange(500)
-        r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
-        qp.setBrush(QColor(r, g, b))
-        qp.drawEllipse(200, 30, diameter1, diameter1)
-
+        for i in range(random.randrange(10)):
+            diameter = random.randrange(500)
+            randx = random.randrange(100)
+            randy = random.randrange(100)
+            r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
+            qp.setBrush(QColor(r, g, b))
+            qp.drawEllipse(randx, randy, diameter, diameter)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
