@@ -29,9 +29,9 @@ class Example(QMainWindow, Ui_MainWindow):
 
     def draw_circle(self, qp):
         for i in range(random.randrange(100)):
-            diameter = random.randrange(500)
-            randx = random.randrange(500)
-            randy = random.randrange(500)
+            diameter = random.randrange(300)
+            randx = random.randrange(750)
+            randy = random.randrange(750)
             r, g, b = random.randrange(256), random.randrange(256), random.randrange(256)
             qp.setBrush(QColor(r, g, b))
             qp.drawEllipse(randx, randy, diameter, diameter)

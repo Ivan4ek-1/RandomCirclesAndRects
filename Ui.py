@@ -12,11 +12,11 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(500, 500)
+        MainWindow.resize(800, 800)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.btn = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.btn.setGeometry(QtCore.QRect(190, 380, 75, 23))
+        self.btn.setGeometry(QtCore.QRect(100, 20, 75, 23))
         self.btn.setObjectName("btn")
         MainWindow.setCentralWidget(self.centralwidget)
 
